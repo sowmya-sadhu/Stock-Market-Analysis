@@ -24,7 +24,7 @@ Trained and tuned the following models:
 |------------------------------|----------------|---------------|
 | ARIMA                        | 1.144          | 1.309         | 
 
-## Highligts 
+## Highlights
 
 - Augmented Dickey-Fuller
    - P-value should be less than equal to 0.5 indicates time series is not stationary.
