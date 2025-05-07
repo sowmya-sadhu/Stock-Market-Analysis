@@ -23,3 +23,14 @@ Trained and tuned the following models:
 | Model                        | MSE            | RMSE          | 
 |------------------------------|----------------|---------------|
 | ARIMA                        | 1.144          | 1.309         | 
+
+## Highligts 
+
+- Augmented Dickey-Fuller
+   -P-value should be less than equal to 0.5 indicates time series is not stationary.
+   -Test Statistic value should be always less than critical value indicates time series in not stationary
+   -P-value is increasing and Test statistic is decreasing it indicates that the evidence against the null hypothesis is weakening.
+-Autocorrelation and Partial Autocorrelation
+  -The series is likely non-stationary due to the slow decay of autocorrelations.There's no clear seasonality visible in this ACF plot
+  -This PACF plot suggests that a simple model like ARIMA(1,d,q) might be suitable. Might also try ARIMA(1,d,1)
+  -The rapid decay in partial autocorrelations after lag 1 is a good sign, but doesn't guarantee stationarity. You should still perform formal stationarity tests.
