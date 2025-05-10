@@ -9,9 +9,9 @@ The focus is on forecasting stock market price, specifically examining stock pri
 Our dataset comes from the Kaggel repository link. The data is from a Stock Market Simulation Analysis and is a collection of the results of marketing analysis. We will make use of the dataset here for more information on the data and features.
 To model and simulate stock market behaviors, providing insights into market trends and potential investment strategies for investment decision-making by simulating stock market scenarios, with the goal of identifying patterns, minimizing risk, and improving returns.
 
--Understanding market behavior through historical data and stochastic simulations.
--Evaluating the performance of hypothetical portfolios or trading strategies over time.
--Providing insights into how different investment strategies might perform under varying market conditions.
+- Understanding market behavior through historical data and stochastic simulations.
+- Evaluating the performance of hypothetical portfolios or trading strategies over time.
+- Providing insights into how different investment strategies might perform under varying market conditions.
 
 ## Evaluated Models
 Trained and tuned the following models:
