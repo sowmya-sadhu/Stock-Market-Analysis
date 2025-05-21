@@ -48,14 +48,14 @@ Trained and tuned the following models:
    ✅ Conclusion: XGBoost outperforms all others, including LSTM, based on RMSE alone.
 
 - Model Suitability
-- | Model        | Handles Non-Linearity     | Captures Long-Term Trends | Complexity | Interpretability     |
-- | ------------ | ------------------------  | ------------------------- | ---------- | ----------------     |
-- | **XGBoost**  | ✅ Strong                | ⚠️ Limited without lags   | Medium     | ✅ High              |
-- | LSTM (Tuned) | ✅✅ Excellent           | ✅✅ Excellent           | 🔺 High    | ❌ Low              |
-- | SARIMAX      | ❌ Mostly linear         | ✅ Seasonal/trend capable | Medium     | ✅ High              |
-- | Prophet      | ❌ Mostly linear         | ✅ Basic seasonality      | ✅ Low    | ✅✅ Very high       |
-- 
--  ✅ Conclusion: If interpretability and speed matter, XGBoost wins. If you want long-term, deep pattern recognition, LSTM still has unique strengths.
+  | Model        | Handles Non-Linearity     | Captures Long-Term Trends | Complexity | Interpretability     |
+  | ------------ | ------------------------  | ------------------------- | ---------- | ----------------     |
+  | **XGBoost**  | ✅ Strong                | ⚠️ Limited without lags   | Medium     | ✅ High              |
+  | LSTM (Tuned) | ✅✅ Excellent           | ✅✅ Excellent           | 🔺 High    | ❌ Low              |
+  | SARIMAX      | ❌ Mostly linear         | ✅ Seasonal/trend capable | Medium     | ✅ High              |
+  | Prophet      | ❌ Mostly linear         | ✅ Basic seasonality      | ✅ Low    | ✅✅ Very high       |
+ 
+   ✅ Conclusion: If interpretability and speed matter, XGBoost wins. If you want long-term, deep pattern recognition, LSTM still has unique strengths.
   
 ## Why the Hybrid Model
 - Conclusion: If interpretability and speed matter, XGBoost wins. If you want long-term, deep pattern recognition, LSTM still has unique strengths
