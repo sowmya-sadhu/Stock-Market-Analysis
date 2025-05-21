@@ -37,7 +37,7 @@ Trained and tuned the following models:
 
 ## Performance
 
-- Accuracy Comparison (RMSE)
+⚖️ Accuracy Comparison (RMSE)
   | Model                        | RMSE            |  Notes                                                        | 
   |------------------------------|-----------------|---------------------------------------------------------------|
   | XGBoost                      | 0.36            |  Best performer — beats LSTM                                  | 
