@@ -68,4 +68,4 @@ Trained and tuned the following models:
 
 - After evaluating multiple time series forecasting models — including Prophet, SARIMAX, XGBoost, and a Tuned LSTM — the hybrid XGBoost + LSTM model is recommended for deployment due to its superior accuracy and robustness.
 - Deploy the XGBoost + LSTM hybrid model for stock price prediction tasks. This architecture delivers robust, high-accuracy forecasts with flexibility for future enhancements.
-
+- Without historical data, but assuming normal price movement and based on the model's low RMSE (~0.30), price will likely remain close to price, with a slight upward or downward movement depending on trend input
