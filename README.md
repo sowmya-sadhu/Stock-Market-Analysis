@@ -6,13 +6,7 @@ The stock market is the collection of markets where stocks and other securities 
 The focus is on forecasting stock market price, specifically examining stock prices, through comprehensive Time Series analysis
 
 ## Objective
-Our dataset comes from the Kaggel repository link. The data is from a Stock Market Simulation Analysis and is a collection of the results of marketing analysis. We will make use of the dataset here for more information on the data and features.
-To model and simulate stock market behaviors, providing insights into market trends and potential investment strategies for investment decision-making by simulating stock market scenarios, with the goal of identifying patterns, minimizing risk, and improving returns.
-
-- Understanding market behavior through historical data and predict future stock prices or returns.
-- Evaluating the performance of hypothetical portfolios or trading strategies over time.
-- Apply time series models such as ARIMA and SARIMA for predicting stock price trends..
-- Evaluate model performance using metrics such as RMSE and MSE
+The primary objective of the dataset is to Simulate realistic stock market behavior that provide artificial yet realistic-looking stock prices for use in model development, testing, and education, Enable safe experimentation that allow data scientists, researchers, and students to build, test, and evaluate forecasting models like XGBoost, LSTM, SARIMAX, and Prophet without financial or compliance risks and support algorithmic trading research on facilitate backtesting of trading strategies, signal generation, and time-series modeling in a controlled, risk-free environment.
 
 ## Evaluated Models
 Trained and tuned the following models:
