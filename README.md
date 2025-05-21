@@ -47,7 +47,7 @@ Trained and tuned the following models:
 
    ✅ Conclusion: XGBoost outperforms all others, including LSTM, based on RMSE alone.
 
-- Model Suitability
+ 🧠 Model Suitability
   | Model        | Handles Non-Linearity     | Captures Long-Term Trends | Complexity | Interpretability     |
   | ------------ | ------------------------  | ------------------------- | ---------- | ----------------     |
   | **XGBoost**  | ✅ Strong                | ⚠️ Limited without lags   | Medium     | ✅ High              |
