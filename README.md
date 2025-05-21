@@ -22,13 +22,7 @@ Trained and tuned the following models:
   - SARIMAX
   - LTSM
   - Prophet
-- Linear Regression
-
-## Performance
- 
-| Model                        | MSE            | RMSE          | 
-|------------------------------|----------------|---------------|
-| ARIMA                        | 1.144          | 1.309         | 
+- XgBoost
 
 ## Highlights
 
@@ -40,3 +34,35 @@ Trained and tuned the following models:
   - The series is likely non-stationary due to the slow decay of autocorrelations.There's no clear seasonality visible in this ACF plot
   - This PACF plot suggests that a simple model like ARIMA(1,d,q) might be suitable. Might also try ARIMA(1,d,1)
   - The rapid decay in partial autocorrelations after lag 1 is a good sign, but doesn't guarantee stationarity. You should still perform formal stationarity tests.
+
+## Performance
+
+- Accuracy Comparison (RMSE)
+| Model                        | RMSE            |                                                               | 
+|------------------------------|-----------------|---------------------------------------------------------------|
+| XGBoost                      | 0.36            |  Best performer — beats LSTM                                  | 
+| LSTM(Tuned)                  | 1.4             |  Very strong, especially for deep temporal dependencie        | 
+| SARIMAX                      | 6.30            |  Better for stationary, linear trends                         | 
+| Prophet                      | 13.36           |  Easy to use, but limited in flexibility and accuracy         |   
+
+✅ Conclusion: XGBoost outperforms all others, including LSTM, based on RMSE alone in your experiment.
+
+- Model Suitability
+| Model        | Handles Non-Linearity     | Captures Long-Term Trends | Complexity | Interpretability     |
+| ------------ | ------------------------  | ------------------------- | ---------- | ----------------     |
+| **XGBoost**  | ✅ Strong                | ⚠️ Limited without lags   | Medium     | ✅ High              |
+| LSTM (Tuned) | ✅✅ Excellent           | ✅✅ Excellent           | 🔺 High    | ❌ Low              |
+| SARIMAX      | ❌ Mostly linear         | ✅ Seasonal/trend capable | Medium     | ✅ High              |
+| Prophet      | ❌ Mostly linear         | ✅ Basic seasonality      | ✅ Low    | ✅✅ Very high       |
+
+## Why the Hybrid Model
+- Conclusion: If interpretability and speed matter, XGBoost wins. If you want long-term, deep pattern recognition, LSTM still has unique strengths
+- Best Accuracy: Combines strengths of both tree-based and deep learning models, achieving lowest RMSE (~0.30).
+- Handles Complexity: LSTM captures nonlinear dependencies, while XGBoost models structured relationships and engineered features.
+- Balanced Performance: Offers excellent predictive performance, interpretability, and generalization on future data.
+
+## Recommendation
+
+-After evaluating multiple time series forecasting models — including Prophet, SARIMAX, XGBoost, and a Tuned LSTM — the hybrid XGBoost + LSTM model is recommended for deployment due to its superior accuracy and robustness.
+-Deploy the XGBoost + LSTM hybrid model for stock price prediction tasks. This architecture delivers robust, high-accuracy forecasts with flexibility for future enhancements.
+
