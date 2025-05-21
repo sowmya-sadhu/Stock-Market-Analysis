@@ -63,6 +63,6 @@ Trained and tuned the following models:
 
 ## Recommendation
 
--After evaluating multiple time series forecasting models — including Prophet, SARIMAX, XGBoost, and a Tuned LSTM — the hybrid XGBoost + LSTM model is recommended for deployment due to its superior accuracy and robustness.
--Deploy the XGBoost + LSTM hybrid model for stock price prediction tasks. This architecture delivers robust, high-accuracy forecasts with flexibility for future enhancements.
+- After evaluating multiple time series forecasting models — including Prophet, SARIMAX, XGBoost, and a Tuned LSTM — the hybrid XGBoost + LSTM model is recommended for deployment due to its superior accuracy and robustness.
+- Deploy the XGBoost + LSTM hybrid model for stock price prediction tasks. This architecture delivers robust, high-accuracy forecasts with flexibility for future enhancements.
 
