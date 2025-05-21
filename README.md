@@ -62,6 +62,7 @@ Trained and tuned the following models:
 - Best Accuracy: Combines strengths of both tree-based and deep learning models, achieving lowest RMSE (~0.30).
 - Handles Complexity: LSTM captures nonlinear dependencies, while XGBoost models structured relationships and engineered features.
 - Balanced Performance: Offers excellent predictive performance, interpretability, and generalization on future data.
+- Without historical data, but assuming normal price movement and based on the model low RMSE (~0.30), price will likely remain close to price, with a slight upward or downward movement depending on trend input
 
 ## Recommendation
 
