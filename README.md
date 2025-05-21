@@ -3,10 +3,10 @@
 ## Introduction
 The stock market is the collection of markets where stocks and other securities are bought and sold by investors. Publicly traded companies offer shares of ownership to the public, and those shares can be bought and sold on the stock market.It is also a popular way for individuals to invest and grow their wealth over time.
 
-The focus is on forecasting stock market price, specifically examining stock prices, through comprehensive Time Series analysis
-
 ## Objective
 The primary objective of the dataset is to Simulate realistic stock market behavior that provide artificial yet realistic-looking stock prices for use in model development, testing, and education, Enable safe experimentation that allow data scientists, researchers, and students to build, test, and evaluate forecasting models like XGBoost, LSTM, SARIMAX, and Prophet without financial or compliance risks and support algorithmic trading research on facilitate backtesting of trading strategies, signal generation, and time-series modeling in a controlled, risk-free environment.
+
+The focus is on forecasting stock market price, specifically examining stock prices, through comprehensive Time Series analysis
 
 ## Evaluated Models
 Trained and tuned the following models:
