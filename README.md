@@ -38,23 +38,25 @@ Trained and tuned the following models:
 ## Performance
 
 - Accuracy Comparison (RMSE)
-| Model                        | RMSE            |                                                               | 
-|------------------------------|-----------------|---------------------------------------------------------------|
-| XGBoost                      | 0.36            |  Best performer — beats LSTM                                  | 
-| LSTM(Tuned)                  | 1.4             |  Very strong, especially for deep temporal dependencie        | 
-| SARIMAX                      | 6.30            |  Better for stationary, linear trends                         | 
-| Prophet                      | 13.36           |  Easy to use, but limited in flexibility and accuracy         |   
+- | Model                        | RMSE            |                                                               | 
+- |------------------------------|-----------------|---------------------------------------------------------------|
+- | XGBoost                      | 0.36            |  Best performer — beats LSTM                                  | 
+- | LSTM(Tuned)                  | 1.4             |  Very strong, especially for deep temporal dependencie        | 
+- | SARIMAX                      | 6.30            |  Better for stationary, linear trends                         | 
+- | Prophet                      | 13.36           |  Easy to use, but limited in flexibility and accuracy         |   
 
-✅ Conclusion: XGBoost outperforms all others, including LSTM, based on RMSE alone in your experiment.
+-  ✅ Conclusion: XGBoost outperforms all others, including LSTM, based on RMSE alone.
 
 - Model Suitability
-| Model        | Handles Non-Linearity     | Captures Long-Term Trends | Complexity | Interpretability     |
-| ------------ | ------------------------  | ------------------------- | ---------- | ----------------     |
-| **XGBoost**  | ✅ Strong                | ⚠️ Limited without lags   | Medium     | ✅ High              |
-| LSTM (Tuned) | ✅✅ Excellent           | ✅✅ Excellent           | 🔺 High    | ❌ Low              |
-| SARIMAX      | ❌ Mostly linear         | ✅ Seasonal/trend capable | Medium     | ✅ High              |
-| Prophet      | ❌ Mostly linear         | ✅ Basic seasonality      | ✅ Low    | ✅✅ Very high       |
-
+- | Model        | Handles Non-Linearity     | Captures Long-Term Trends | Complexity | Interpretability     |
+- | ------------ | ------------------------  | ------------------------- | ---------- | ----------------     |
+- | **XGBoost**  | ✅ Strong                | ⚠️ Limited without lags   | Medium     | ✅ High              |
+- | LSTM (Tuned) | ✅✅ Excellent           | ✅✅ Excellent           | 🔺 High    | ❌ Low              |
+- | SARIMAX      | ❌ Mostly linear         | ✅ Seasonal/trend capable | Medium     | ✅ High              |
+- | Prophet      | ❌ Mostly linear         | ✅ Basic seasonality      | ✅ Low    | ✅✅ Very high       |
+- 
+-  ✅ Conclusion: If interpretability and speed matter, XGBoost wins. If you want long-term, deep pattern recognition, LSTM still has unique strengths.
+  
 ## Why the Hybrid Model
 - Conclusion: If interpretability and speed matter, XGBoost wins. If you want long-term, deep pattern recognition, LSTM still has unique strengths
 - Best Accuracy: Combines strengths of both tree-based and deep learning models, achieving lowest RMSE (~0.30).
